@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up": { "model": "terraria:Blue_Torch_on" },
+        "facing=east": { "model": "terraria:Blue_Torch_on_wall" },
+        "facing=south": { "model": "terraria:Blue_Torch_on_wall", "y": 90 },
+        "facing=west": { "model": "terraria:Blue_Torch_on_wall", "y": 180 },
+        "facing=north": { "model": "terraria:Blue_Torch_on_wall", "y": 270 }
+    }
+}

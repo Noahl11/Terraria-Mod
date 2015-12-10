@@ -1,0 +1,20 @@
+{
+    "textures": {
+        "0": "blocks/planks_oak"
+    },
+    "elements": [
+        {
+            "name": "Bottom_Back",
+            "from": [ 0.0, 15.0, 0.0 ], 
+            "to": [ 16.0, 15.95, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 15.95 ], "cullface": "north" },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 15.95 ], "cullface": "east" },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 15.95 ], "cullface": "south" },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 15.95 ], "cullface": "west" },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 15.95 ], "cullface": "up" },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 15.95 ], "cullface": "down" }
+            }
+        }
+    ]
+}

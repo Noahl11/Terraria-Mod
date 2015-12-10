@@ -1,0 +1,16 @@
+[
+{
+  "modid": "terraria",
+  "name": "Terraria",
+  "description": "Minecraft is Terraria.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Noahl11"],
+  "credits": "Noahl11",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

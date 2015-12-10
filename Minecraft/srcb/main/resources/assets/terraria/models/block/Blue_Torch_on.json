@@ -1,0 +1,7 @@
+{
+    "parent": "block/torch",
+    "textures": {
+        "torch": "terraria:blocks/Blue_Torch_on"
+    }
+}
+

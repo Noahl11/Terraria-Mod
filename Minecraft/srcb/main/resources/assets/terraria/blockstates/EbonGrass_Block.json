@@ -1,0 +1,11 @@
+{
+    "variants": {
+        "snowy=false": [
+            { "model": "terraria:EbonGrass_Block" },
+            { "model": "terraria:EbonGrass_Block", "y": 90 },
+            { "model": "terraria:EbonGrass_Block", "y": 180 },
+            { "model": "terraria:EbonGrass_Block", "y": 270 }
+        ],
+        "snowy=true":  { "model": "grass_snowed" }
+    }
+}
