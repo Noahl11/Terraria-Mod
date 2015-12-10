@@ -23,7 +23,7 @@ public class TerrariaBlocks {
 	public static BlockLoaders load;
 	
 	//random
-	public static Block Statue0;
+	public static Block Statue1;
 	public static Block Blue_Torch;
 	public static Block Boreal_Wood;
 	public static Block Boreal_Wood_Platform;
