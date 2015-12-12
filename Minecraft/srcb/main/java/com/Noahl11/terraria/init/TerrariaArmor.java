@@ -17,7 +17,7 @@ public class TerrariaArmor {
 	public static ItemLoaders load;
 	public static ArmorMaterial CustomArmor;
 	
-	//Prehardcore
+	//Prehardcore!
 	// Mining armor
 	public static Item 	Mining_Helmet;
 	public static Item 	Mining_Chainmail;
