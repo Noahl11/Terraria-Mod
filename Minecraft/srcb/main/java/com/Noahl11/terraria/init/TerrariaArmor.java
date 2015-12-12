@@ -10,6 +10,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.LanguageRegistry;
 
 import com.Noahl11.terraria.Reference;
+import com.Noahl11.terraria.items.armor.MiningArmor;
 
 
 public class TerrariaArmor {
@@ -17,38 +18,39 @@ public class TerrariaArmor {
 	public static ItemLoaders load;
 	public static ArmorMaterial CustomArmor;
 	
-	//Prehardcore!
-	// Mining armor
+	//Prehardcore
+	// Name: Armor Strength * 2: Sum: Bonus: Location: Extra:
+	// Mining armor, 0.5 1 1 0.5, 3, +30% mining speed, Sold from Merchant for 4 gold or Helmet, Shirt and Pants rare drop from undead miner
 	public static Item 	Mining_Helmet;
 	public static Item 	Mining_Chainmail;
 	public static Item 	Mining_Leggings;
 	public static Item 	Mining_Boots;
-	// Wooden armor
+	// Wooden armor, 0.5 1 0.5 0, 2(3), +1 Defense, 75 wood crafted at workbench
 	public static Item Wood_Helmet;
 	public static Item Wood_ChestPlate;
 	public static Item Wood_Leggings;
 	public static Item Wood_Boots;
-	//Rich Mahogany armor
+	//Rich Mahogany armor, 0.5 1 1 0.5, 3(4), +1 Defense, 75 rich mahogany crafted at workbench
 	public static Item Rich_Mahogany_Helmet;
 	public static Item Rich_Mahogany_Chainmail;
 	public static Item Rich_Mahogany_Leggings;
 	public static Item Rich_Mahogany_Boots;
-	//Boreal Wood armor
+	//Boreal Wood armor, 0.5 1 1 0.5, 3(4), +1 Defense, 75 boreal wood crafted at workbench
 	public static Item Boreal_Wood_Helmet;
 	public static Item Boreal_Wood_Chainmail;
 	public static Item Boreal_Wood_Leggings;
 	public static Item Boreal_Wood_Boots;
-	//Palm Wood armor
+	//Palm Wood armor, 0.5 1 1 0.5, 3(4), +1 Defense, 75 palm wood crafted at workbench
 	public static Item Palm_Wood_Helmet;
 	public static Item Palm_Wood_Chainmail;
 	public static Item Palm_Wood_Leggings;
 	public static Item Palm_Wood_Boots;
-	//Ebonwood Armor
+	//Ebonwood Armor, 0.5 2 1 0.5, 4(5), +1 Defense, 75 ebonwood crafted at workbench
 	public static Item Ebonwood_Helmet;
 	public static Item Ebonwood_Chainmail;
 	public static Item Ebonwood_Leggings;
 	public static Item Ebonwood_Boots;
-	//Shadewood Armor
+	//Shadewood Armor, 0.5 2 1 0.5, 4(5), +1 Defense, 75 shadewood crafted at workbench
 	public static Item Shadewood_Helmet;
 	public static Item Shadewood_Chainmail;
 	public static Item Shadewood_Leggings;
@@ -149,6 +151,46 @@ public class TerrariaArmor {
 	public static Item Bee_Leggings;
 	public static Item Bee_Boots;
 	//Jungle armor
+	public static Item Jungle_Helmet;
+	public static Item Jungle_Chainmail;
+	public static Item Jungle_Leggings;
+	public static Item Jungle_Boots;
+	//Ancient Cobalt armor
+	public static Item Ancient_Cobalt_Helmet;
+	public static Item Ancient_Cobalt_Chainmail;
+	public static Item Ancient_Cobalt_Leggings;
+	public static Item Ancient_Cobalt_Boots;
+	//Meteor armor
+	public static Item Meteor_Helmet;
+	public static Item Meteor_Chainmail;
+	public static Item Meteor_Leggings;
+	public static Item Meteor_Boots;
+	//Necro armor
+	public static Item Necro_Helmet;
+	public static Item Necro_Chainmail;
+	public static Item Necro_Leggings;
+	public static Item Necro_Boots;
+	//Shadow armor
+	public static Item Shadow_Helmet;
+	public static Item Shadow_Chainmail;
+	public static Item Shadow_Leggings;
+	public static Item Shadow_Boots;
+	//Ancient Shadow armor
+	public static Item Ancient_Shadow_Helmet;
+	public static Item Ancient_Shadow_Chainmail;
+	public static Item Ancient_Shadow_Leggings;
+	public static Item Ancient_Shadow_Boots;
+	//Crimson Armor
+	public static Item Crimson_Helmet;
+	public static Item Crimson_Chainmail;
+	public static Item Crimson_Leggings;
+	public static Item Crimson_Boots;
+	//Molten armor
+	public static Item Molten_Helmet;
+	public static Item Molten_Chainmail;
+	public static Item Molten_Leggings;
+	public static Item Molten_Boots;
+	//Hardmode
 	
 	public static Item Admin_Helmet;
 	public static Item Admin_Chainmail;
@@ -165,6 +207,13 @@ public class TerrariaArmor {
 	}
 	
 	public static void init() {
+		//Mining armor
+		armorCustoms("terraria:Copper_Armor", 20, 1, 2, 2, 1, 0);
+		Mining_Helmet = new MiningArmor(CustomArmor, 1, 0).setUnlocalizedName("Mining_Helmet").setCreativeTab(Terraria5);
+		Mining_Chainmail = new MiningArmor(CustomArmor, 1, 1).setUnlocalizedName("Mining_Chainmail").setCreativeTab(Terraria5);
+		Mining_Leggings = new MiningArmor(CustomArmor, 1, 2).setUnlocalizedName("Mining_Leggings").setCreativeTab(Terraria5);
+		Mining_Boots = new MiningArmor(CustomArmor, 1, 3).setUnlocalizedName("Mining_Boots").setCreativeTab(Terraria5);
+		//Wooden Armor
 		armorCustoms("terraria:Copper_Armor", 20, 3, 8, 4, 3, 0);
 		Wood_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Wood_Helmet").setCreativeTab(Terraria5);
 		Wood_ChestPlate = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Wood_ChestPlate").setCreativeTab(Terraria5);
@@ -193,6 +242,12 @@ public class TerrariaArmor {
 	}
 	
 	public static void register() {
+		//Mining Armor
+		load.reg(Mining_Helmet, "Mining Helmet");
+		load.reg(Mining_Chainmail, "Mining Chainmail");
+		load.reg(Mining_Leggings, "Mining Leggings");
+		load.reg(Mining_Boots, "Mining Boots");
+		//Wooden Armor
 		load.reg(Wood_Helmet, "Wood Helmet");
 		load.reg(Wood_ChestPlate, "Wood Chestplate");
 		load.reg(Wood_Leggings, "Wood Leggings");
@@ -218,6 +273,12 @@ public class TerrariaArmor {
 	}
 	
 	public static void registerRenders() {
+		//Mining Armor
+		registerRender(Mining_Helmet);
+		registerRender(Mining_Chainmail);
+		registerRender(Mining_Leggings);
+		registerRender(Mining_Boots);
+		//Wooden Armor
 		registerRender(Wood_Helmet);
 		registerRender(Wood_ChestPlate);
 		registerRender(Wood_Leggings);
