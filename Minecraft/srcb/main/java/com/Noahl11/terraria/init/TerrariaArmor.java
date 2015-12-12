@@ -1,3 +1,5 @@
+package com.Noahl11.terraria.init;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -15,36 +17,149 @@ public class TerrariaArmor {
 	public static ItemLoaders load;
 	public static ArmorMaterial CustomArmor;
 	
-	public static Item Admin_Helmet;
-	public static Item Admin_Chainmail;
-	public static Item Admin_Leggings;
-	public static Item Admin_Boots;
+	//Prehardcore
+	// Mining armor
+	public static Item 	Mining_Helmet;
+	public static Item 	Mining_Chainmail;
+	public static Item 	Mining_Leggings;
+	public static Item 	Mining_Boots;
+	// Wooden armor
 	public static Item Wood_Helmet;
 	public static Item Wood_ChestPlate;
 	public static Item Wood_Leggings;
 	public static Item Wood_Boots;
+	//Rich Mahogany armor
+	public static Item Rich_Mahogany_Helmet;
+	public static Item Rich_Mahogany_Chainmail;
+	public static Item Rich_Mahogany_Leggings;
+	public static Item Rich_Mahogany_Boots;
+	//Boreal Wood armor
+	public static Item Boreal_Wood_Helmet;
+	public static Item Boreal_Wood_Chainmail;
+	public static Item Boreal_Wood_Leggings;
+	public static Item Boreal_Wood_Boots;
+	//Palm Wood armor
+	public static Item Palm_Wood_Helmet;
+	public static Item Palm_Wood_Chainmail;
+	public static Item Palm_Wood_Leggings;
+	public static Item Palm_Wood_Boots;
+	//Ebonwood Armor
+	public static Item Ebonwood_Helmet;
+	public static Item Ebonwood_Chainmail;
+	public static Item Ebonwood_Leggings;
+	public static Item Ebonwood_Boots;
+	//Shadewood Armor
+	public static Item Shadewood_Helmet;
+	public static Item Shadewood_Chainmail;
+	public static Item Shadewood_Leggings;
+	public static Item Shadewood_Boots;
+	//Rain armor
+	public static Item Rain_Helmet;
+	public static Item Rain_Chainmail;
+	public static Item Rain_Leggings;
+	public static Item Rain_Boots;
+	//Eskimo armor
+	public static Item Eskimo_Helmet;
+	public static Item Eskimo_Chainmail;
+	public static Item Eskimo_Leggings;
+	public static Item Eskimo_Boots;
+	//Pink Eskimo armor
+	public static Item Pink_Eskimo_Helmet;
+	public static Item Pink_Eskimo_Chainmail;
+	public static Item Pink_Eskimo_Leggings;
+	public static Item Pink_Eskimo_Boots;
+	//Angler armor
+	public static Item Angler_Helmet;
+	public static Item Angler_Chainmail;
+	public static Item Angler_Leggings;
+	public static Item Angler_Boots;
+	//Cactus armor
+	public static Item Cactus_Helmet;
+	public static Item Cactus_Chainmail;
+	public static Item Cactus_Leggings;
+	public static Item Cactus_Boots;
+	//Copper armor
 	public static Item Copper_Helmet;
 	public static Item Copper_Chainmail;
 	public static Item Copper_Leggings;
 	public static Item Copper_Boots;
+	//Tin armor
+	public static Item Tin_Helmet;
+	public static Item Tin_Chainmail;
+	public static Item Tin_Leggings;
+	public static Item Tin_Boots;
+	//Pumpkin armor
+	public static Item Pumpkin_Helmet;
+	public static Item Pumpkin_Chainmail;
+	public static Item Pumpkin_Leggings;
+	public static Item Pumpkin_Boots;
+	//Gladiator armor
+	public static Item Gladiator_Helmet;
+	public static Item Gladiator_Chainmail;
+	public static Item Gladiator_Leggings;
+	public static Item Gladiator_Boots;
+	//Iron armor
+	public static Item Iron_Helmet;
+	public static Item Iron_Chainmail;
+	public static Item Iron_Leggings;
+	public static Item Iron_Boots;
+	//Lead armor
 	public static Item Lead_Helmet;
 	public static Item Lead_Chainmail;
 	public static Item Lead_Leggings;
 	public static Item Lead_Boots;
+	//Silver armor
+	public static Item Silver_Helmet;
+	public static Item Silver_Chainmail;
+	public static Item Silver_Leggings;
+	public static Item Silver_Boots;
+	//Tungsten armor
 	public static Item Tungsten_Helmet;
 	public static Item Tungsten_Chainmail;
 	public static Item Tungsten_Leggings;
 	public static Item Tungsten_Boots;
+	//Gold armor
+	public static Item Gold_Helmet;
+	public static Item Gold_Chainmail;
+	public static Item Gold_Leggings;
+	public static Item Gold_Boots;
+	//Platinum armor
+	public static Item Platinum_Helmet;
+	public static Item Platinum_Chainmail;
+	public static Item Platinum_Leggings;
+	public static Item Platinum_Boots;
+	//Ninja armor
+	public static Item Ninja_Helmet;
+	public static Item Ninja_Chainmail;
+	public static Item Ninja_Leggings;
+	public static Item Ninja_Boots;
+	//Fossil armor
+	public static Item Fossil_Helmet;
+	public static Item Fossil_Chainmail;
+	public static Item Fossil_Leggings;
+	public static Item Fossil_Boots;
+	//Obsidian armor
+	public static Item Obsidian_Helmet;
+	public static Item Obsidian_Chainmail;
+	public static Item Obsidian_Leggings;
+	public static Item Obsidian_Boots;
+	//Bee armor
+	public static Item Bee_Helmet;
+	public static Item Bee_Chainmail;
+	public static Item Bee_Leggings;
+	public static Item Bee_Boots;
+	//Jungle armor
+	
+	public static Item Admin_Helmet;
+	public static Item Admin_Chainmail;
+	public static Item Admin_Leggings;
+	public static Item Admin_Boots;
 	
 	public static CreativeTabs Terraria5 = new CreativeTabs("Terraria5") {
 		public Item getTabIconItem() {
 				return Wood_Helmet;
 		}
 	};
-	public static void armorCustoms(String textureName, int durability, int i, int i2, int i3, int i4, int enchantability) {
-		CustomArmor = EnumHelper.addArmorMaterial("CustomArmor", textureName, durability, new int[] {i, i2, i3, i4}, enchantability);
-	}
-	
 	public static void armorCustoms(String textureName, int durability, int i, int i2, int i3, int i4, int enchantability) {
 		CustomArmor = EnumHelper.addArmorMaterial("CustomArmor", textureName, durability, new int[] {i, i2, i3, i4}, enchantability);
 	}
@@ -71,10 +186,10 @@ public class TerrariaArmor {
 		Tungsten_Leggings = new ItemArmor(CustomArmor, 2, 2).setUnlocalizedName("Tungsten_Leggings").setCreativeTab(Terraria5);
 		Tungsten_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Tungsten_Boots").setCreativeTab(Terraria5);
 		armorCustoms("terraria:invis", 100000, 1000, 2000, 500, 500, 0);
-		Admin_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Admin_Helmet").setCreativeTab(Terraria6);
-		Admin_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Admin_Chainmail").setCreativeTab(Terraria6);
-		Admin_Leggings = new ItemArmor(CustomArmor, 2, 2).setUnlocalizedName("Admin_Leggings").setCreativeTab(Terraria6);
-		Admin_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Admin_Boots").setCreativeTab(Terraria6);
+		Admin_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Admin_Helmet").setCreativeTab(Terraria5);
+		Admin_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Admin_Chainmail").setCreativeTab(Terraria5);
+		Admin_Leggings = new ItemArmor(CustomArmor, 2, 2).setUnlocalizedName("Admin_Leggings").setCreativeTab(Terraria5);
+		Admin_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Admin_Boots").setCreativeTab(Terraria5);
 	}
 	
 	public static void register() {
