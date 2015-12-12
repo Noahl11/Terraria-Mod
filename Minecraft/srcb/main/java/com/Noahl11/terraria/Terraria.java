@@ -33,6 +33,7 @@ import com.Noahl11.terraria.generators.PlatinumOreGenerator;
 import com.Noahl11.terraria.generators.SilverOreGenerator;
 import com.Noahl11.terraria.generators.TinOreGenerator;
 import com.Noahl11.terraria.generators.TungstenOreGenerator;
+import com.Noahl11.terraria.init.TerrariaArmor;
 import com.Noahl11.terraria.init.TerrariaBlocks;
 import com.Noahl11.terraria.init.TerrariaItems;
 import com.Noahl11.terraria.init.TerrariaPlants;
@@ -62,6 +63,8 @@ public class Terraria {
 		TerrariaBlocks.register();
 		TerrariaPlants.init();
 		TerrariaPlants.register();
+		TerrariaArmor.init();
+		TerrariaArmor.register();
 	}
 	
 	@EventHandler
