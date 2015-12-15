@@ -10,6 +10,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.LanguageRegistry;
 
 import com.Noahl11.terraria.Reference;
+import com.Noahl11.terraria.items.armor.D1Armor;
 import com.Noahl11.terraria.items.armor.MiningArmor;
 
 
@@ -19,7 +20,7 @@ public class TerrariaArmor {
 	public static ArmorMaterial CustomArmor;
 	
 	//Prehardcore
-	// Name: Armor Strength * 2: Sum: Bonus: Location: Extra:
+	// Name: Armor Strength * 4: Sum: Bonus: Location: Extra:
 	// Mining armor, 0.5 1 1 0.5, 3, +30% mining speed, Sold from Merchant for 4 gold or Helmet, Shirt and Pants rare drop from undead miner
 	public static Item 	Mining_Helmet;
 	public static Item 	Mining_Chainmail;
@@ -208,17 +209,17 @@ public class TerrariaArmor {
 	
 	public static void init() {
 		//Mining armor
-		armorCustoms("terraria:Copper_Armor", 20, 1, 2, 2, 1, 0);
+		armorCustoms("terraria:Copper_Armor", 20, 2, 4, 4, 2, 0);
 		Mining_Helmet = new MiningArmor(CustomArmor, 1, 0).setUnlocalizedName("Mining_Helmet").setCreativeTab(Terraria5);
 		Mining_Chainmail = new MiningArmor(CustomArmor, 1, 1).setUnlocalizedName("Mining_Chainmail").setCreativeTab(Terraria5);
 		Mining_Leggings = new MiningArmor(CustomArmor, 1, 2).setUnlocalizedName("Mining_Leggings").setCreativeTab(Terraria5);
 		Mining_Boots = new MiningArmor(CustomArmor, 1, 3).setUnlocalizedName("Mining_Boots").setCreativeTab(Terraria5);
 		//Wooden Armor
-		armorCustoms("terraria:Copper_Armor", 20, 3, 8, 4, 3, 0);
-		Wood_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Wood_Helmet").setCreativeTab(Terraria5);
-		Wood_ChestPlate = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Wood_ChestPlate").setCreativeTab(Terraria5);
-		Wood_Leggings = new ItemArmor(CustomArmor, 2, 2).setUnlocalizedName("Wood_Leggings").setCreativeTab(Terraria5);
-		Wood_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Wood_Boots").setCreativeTab(Terraria5);
+		armorCustoms("terraria:Copper_Armor", 20, 2, 4, 2, 0, 0);
+		Wood_Helmet = new D1Armor(CustomArmor, 1, 0).setUnlocalizedName("Wood_Helmet").setCreativeTab(Terraria5);
+		Wood_ChestPlate = new D1Armor(CustomArmor, 1, 1).setUnlocalizedName("Wood_ChestPlate").setCreativeTab(Terraria5);
+		Wood_Leggings = new D1Armor(CustomArmor, 2, 2).setUnlocalizedName("Wood_Leggings").setCreativeTab(Terraria5);
+		Wood_Boots = new D1Armor(CustomArmor, 1, 3).setUnlocalizedName("Wood_Boots").setCreativeTab(Terraria5);
 		armorCustoms("terraria:Copper_Armor", 20, 1, 2, (int) 0.5, (int) 0.5, 0);
 		Copper_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Copper_Helmet").setCreativeTab(Terraria5);
 		Copper_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Copper_Chainmail").setCreativeTab(Terraria5);
