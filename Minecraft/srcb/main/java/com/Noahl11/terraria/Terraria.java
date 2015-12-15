@@ -21,10 +21,12 @@ import com.Noahl11.terraria.Debuff.effects.Admin;
 import com.Noahl11.terraria.Debuff.effects.Bleeding;
 import com.Noahl11.terraria.Entity.EntityCreator;
 import com.Noahl11.terraria.Entity.hostile.Entity.EntityBlue_Jellyfish;
+import com.Noahl11.terraria.Entity.hostile.Entity.EntityLight1;
 import com.Noahl11.terraria.Entity.hostile.Entity.EntitySlime2;
 import com.Noahl11.terraria.Entity.hostile.Entity.EntitySlime3;
 import com.Noahl11.terraria.Entity.render.RenderBlue_Jellyfish;
 import com.Noahl11.terraria.Entity.render.RenderBlue_Slime;
+import com.Noahl11.terraria.Entity.render.RenderEntityLight;
 import com.Noahl11.terraria.Entity.render.RenderSlime;
 import com.Noahl11.terraria.biome.TerrariaCorruptionBiome;
 import com.Noahl11.terraria.generators.CopperOreGenerator;
@@ -89,7 +91,9 @@ public class Terraria {
 		EntityCreator.createEntity(EntityBlue_Jellyfish.class, new RenderBlue_Jellyfish(), "Blue Jellyfish", EnumCreatureType.MONSTER, 10, 0, 7, new BiomeGenBase[] {BiomeGenBase.forest, BiomeGenBase.desert}, 0x17C2CF, 0x2C757A, true, 64, 1, true);
 		EntityCreator.createEntity(EntitySlime2.class, new RenderSlime(), "Terraria Slime", EnumCreatureType.MONSTER, 50, 0, 10, new BiomeGenBase[] {BiomeGenBase.birchForest, BiomeGenBase.birchForestHills, BiomeGenBase.extremeHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.extremeHillsPlus, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.plains, BiomeGenBase.swampland, BiomeGenBase.savanna, BiomeGenBase.savannaPlateau}, 0x248214, 0x43E327, true, 64, 1, true);
 		EntityCreator.createEntity(EntitySlime3.class, new RenderBlue_Slime(), "Terraria Blue Slime", EnumCreatureType.MONSTER, 50, 0, 10, new BiomeGenBase[] {BiomeGenBase.birchForest, BiomeGenBase.birchForestHills, BiomeGenBase.extremeHills, BiomeGenBase.extremeHillsEdge, BiomeGenBase.extremeHillsPlus, BiomeGenBase.forest, BiomeGenBase.forestHills, BiomeGenBase.plains, BiomeGenBase.swampland, BiomeGenBase.savanna, BiomeGenBase.savannaPlateau}, 0x0004FF, 0x90C3D4, true, 64, 1, true);
+		EntityCreator.createEntity(EntityLight1.class, new RenderEntityLight(), "Light", EnumCreatureType.AMBIENT, 0, 1, 2, new BiomeGenBase[] {}, 0xffffff, 0xffffff, true, 0, 1, true);
 		LanguageRegistry.instance().addStringLocalization("entity.Blue Jellyfish.name", "en_US", "Blue Jellyfish");
+		LanguageRegistry.instance().addStringLocalization("entity.Light.name", "en_US", "Light");
 		LanguageRegistry.instance().addStringLocalization("entity.Terraria Slime.name", "en_US", "Terraria Slime");
 		LanguageRegistry.instance().addStringLocalization("entity.Terraria Blue Slime.name", "en_US", "Terraria Slime");
 	}

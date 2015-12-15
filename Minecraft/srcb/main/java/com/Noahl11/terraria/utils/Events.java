@@ -4,13 +4,19 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.DamageSource;
+import net.minecraft.world.EnumSkyBlock;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingUpdateEvent;
 import net.minecraftforge.event.entity.player.AchievementEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 import net.minecraftforge.event.world.BlockEvent.NeighborNotifyEvent;
@@ -36,7 +42,17 @@ public class Events {
 	@SubscribeEvent
 	public void bleeding(LivingUpdateEvent e) {
 		EntityLivingBase p2 = e.entityLiving;
+		if (p2.isCreatureType(EnumCreatureType.MONSTER, false)) {
+			p2.addPotionEffect(new PotionEffect(5, 100000, 1, false, false));
+		}
 		if (!p2.isCreatureType(EnumCreatureType.WATER_CREATURE, false) && !p2.isCreatureType(EnumCreatureType.MONSTER, false) && !p2.isCreatureType(EnumCreatureType.CREATURE, false) && !p2.isCreatureType(EnumCreatureType.AMBIENT, false)) {
+			//EntityPlayer p = (EntityPlayer) e.entityLiving;
+			//World world = p.getEntityWorld();
+			//InventoryPlayer invin = p.inventory;
+			//if(invin.hasItemStack(new ItemStack(Blocks.torch))) {
+			//	world.setLightFor(EnumSkyBlock.BLOCK, p.getPosition(), 15);
+			//}
+			
 			p2.addPotionEffect(new PotionEffect(23, 100000, 1, false, false));
 			p2.stepHeight = 1.0f;
 			if (p2.isInWater()) {
