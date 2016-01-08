@@ -220,6 +220,25 @@ public class TerrariaArmor {
 		Wood_ChestPlate = new D1Armor(CustomArmor, 1, 1).setUnlocalizedName("Wood_ChestPlate").setCreativeTab(Terraria5);
 		Wood_Leggings = new D1Armor(CustomArmor, 2, 2).setUnlocalizedName("Wood_Leggings").setCreativeTab(Terraria5);
 		Wood_Boots = new D1Armor(CustomArmor, 1, 3).setUnlocalizedName("Wood_Boots").setCreativeTab(Terraria5);
+		//Rich Mahogany Armor
+		armorCustoms("terraria:Copper_Armor",20, 2, 4, 4, 2, 0);
+		Rich_Mahogany_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Rich_Mahogany_Helmet").setCreativeTab(Terraria5);
+		Rich_Mahogany_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Rich_Mahogany_Chainmail").setCreativeTab(Terraria5);
+		Rich_Mahogany_Leggings = new ItemArmor(CustomArmor, 1, 2).setUnlocalizedName("Rich_Mahogany_Leggings").setCreativeTab(Terraria5);
+		Rich_Mahogany_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Rich_Mahogany_Boots").setCreativeTab(Terraria5);
+		//Boreal Wood Armor
+		armorCustoms("terraria:Copper_Armor", 20, 2, 4, 4, 2, 0);
+		Boreal_Wood_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Boreal_Wood_Helmet").setCreativeTab(Terraria5);
+		Boreal_Wood_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Boreal_Wood_Chainmail").setCreativeTab(Terraria5);
+		Boreal_Wood_Leggings = new ItemArmor(CustomArmor, 1, 2).setUnlocalizedName("Boreal_Wood_Leggings").setCreativeTab(Terraria5);
+		Boreal_Wood_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Boreal_Wood_Boots").setCreativeTab(Terraria5);
+		//Palm Wood Armor
+		armorCustoms("terraria:Copper_Armor", 20, 2, 4, 4, 2, 0);
+		Palm_Wood_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Palm_Wood_Helmet").setCreativeTab(Terraria5);
+		Palm_Wood_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Palm_Wood_Chainmail").setCreativeTab(Terraria5);
+		Palm_Wood_Leggings = new ItemArmor(CustomArmor, 1, 2).setUnlocalizedName("Palm_Wood_Leggings").setCreativeTab(Terraria5);
+		Palm_Wood_Boots = new ItemArmor(CustomArmor, 1, 3).setUnlocalizedName("Palm_Wood_Boots").setCreativeTab(Terraria5);
+		//Copper Armor
 		armorCustoms("terraria:Copper_Armor", 20, 1, 2, (int) 0.5, (int) 0.5, 0);
 		Copper_Helmet = new ItemArmor(CustomArmor, 1, 0).setUnlocalizedName("Copper_Helmet").setCreativeTab(Terraria5);
 		Copper_Chainmail = new ItemArmor(CustomArmor, 1, 1).setUnlocalizedName("Copper_Chainmail").setCreativeTab(Terraria5);
@@ -253,6 +272,16 @@ public class TerrariaArmor {
 		load.reg(Wood_ChestPlate, "Wood Chestplate");
 		load.reg(Wood_Leggings, "Wood Leggings");
 		load.reg(Wood_Boots, "Wood Boots");
+		//Rich Mahogany Armor
+		load.reg(Rich_Mahogany_Helmet, "Rich Mahogany Helmet");
+		load.reg(Rich_Mahogany_Chainmail, "Rich Mahogany Chainmail");
+		load.reg(Rich_Mahogany_Leggings, "Rich Mahogany Leggings");
+		load.reg(Rich_Mahogany_Boots, "Rich Mahogany Boots");
+		//Boreal Wood Armor
+		load.reg(Boreal_Wood_Helmet, "Boreal Wood Helmet");
+		load.reg(Boreal_Wood_Chainmail, "Boreal Wood Chainmail");
+		load.reg(Boreal_Wood_Leggings, "Boreal Wood Leggings");
+		load.reg(Boreal_Wood_Boots, "Boreal Wood Boots");
 		load.reg(Copper_Helmet, "Copper Helmet");
 		load.reg(Copper_Chainmail, "Copper Chainmail");
 		load.reg(Copper_Leggings, "Copper Leggings");

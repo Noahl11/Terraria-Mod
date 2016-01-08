@@ -24,8 +24,7 @@ public class MiningArmor extends ItemArmor{
 		ModelBiped armorModel = ClientProxy.armorModels.get(this);
 		
 		return armorModel;
-	}
-	
+	}	
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		if(player.getCurrentArmor(0) != null && player.getCurrentArmor(1) != null && player.getCurrentArmor(2) != null && player.getCurrentArmor(3) != null) {

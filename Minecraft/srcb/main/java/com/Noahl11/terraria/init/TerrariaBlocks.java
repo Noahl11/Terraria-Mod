@@ -24,6 +24,7 @@ public class TerrariaBlocks {
 	
 	//random
 	public static Block Statue0;
+	public static Block Table;
 	public static Block Blue_Torch;
 	public static Block Boreal_Wood;
 	public static Block Boreal_Wood_Platform;
@@ -48,6 +49,7 @@ public class TerrariaBlocks {
 	
 	public static void init() {
 		Statue0 = new Statue0(Material.ground).setUnlocalizedName("'0'_Statue").setCreativeTab(Terraria2);
+		Table = new TerrariaBaseBlock(Material.wood).setUnlocalizedName("Table").setCreativeTab(Terraria2);
 		Blue_Torch = new BlueTorch().setUnlocalizedName("Blue_Torch_on").setCreativeTab(TerrariaItems.Terraria1);
 		Boreal_Wood = new Boreal_Wood_Work_Bench(Material.wood).setUnlocalizedName("Boreal_Wood").setCreativeTab(Terraria2);
 		Boreal_Wood_Platform = new Boreal_Wood_Platform(Material.wood).setUnlocalizedName("Boreal_Wood_Platform").setCreativeTab(Terraria2);
@@ -67,6 +69,7 @@ public class TerrariaBlocks {
 	
 	public static void register() {
 		load.reg(Statue0, "0 Statue");
+		load.reg(Table, "Table");
 		load.reg(Blue_Torch, "Blue Torch");
 		load.reg(Boreal_Wood, "Boreal Wood");
 		load.reg(Boreal_Wood_Platform, "Boreal Wood Platform");
@@ -87,6 +90,7 @@ public class TerrariaBlocks {
 	
 	public static void registerRenders() {
 		registerRender(Statue0);
+		registerRender(Table);
 		registerRender(Blue_Torch);
 		registerRender(Boreal_Wood);
 		registerRender(Boreal_Wood_Platform);
