@@ -21,6 +21,25 @@ public class TerrariaPlants {
 	//Finished Items
 	public static Block acorn;
 	
+	//Works Inprogress
+	//Herbs
+	public static Block Blinkroot;
+	public static Block Daybloom;
+	public static Block Deathweed;
+	public static Block Fireblossom;
+	public static Block Moonglow;
+	public static Block Shiverthorn;
+	public static Block Waterleaf;
+	//Mushrooms
+	public static Block Mushroom;
+	public static Block Glowing_Mushroom;
+	public static Block Vile_Mushroom;
+	public static Block Vicious_Mushroom;
+	public static Block Green_Mushroom;
+	public static Block Teal_Mushroom;
+	//Vines
+	public static Block Regular_Vine
+	
 	public static CreativeTabs Plants = new CreativeTabs("Terraria Plants") {
 		public Item getTabIconItem() {
 				return TerrariaItems.terraria;
