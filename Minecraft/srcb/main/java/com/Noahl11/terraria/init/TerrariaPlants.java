@@ -39,7 +39,10 @@ public class TerrariaPlants {
 	public static Block Teal_Mushroom;
 	//Vines
 	public static Block Regular_Vine
-	
+	public static Block Jungle_Vine
+        public static Block Hallowed_Vine
+
+
 	public static CreativeTabs Plants = new CreativeTabs("Terraria Plants") {
 		public Item getTabIconItem() {
 				return TerrariaItems.terraria;
